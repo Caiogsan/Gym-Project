@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#titulogeral {
+    display: inline-block;
+    
+   
+}
+
+#scorpion {
+    width: 170px;
+    height: 17vh;
+    display: inline-block;
+    position: absolute;
+    left: 80vw;
+    top: 2vh;
+    background-image: url("scorpion-gf03a28d7d_1280.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#navegacao {
+    display: inline-block;
+   align-items: center;
+   max-width: 690px;
+   padding-left: 5em;
+   position: absolute;
+   top: 50%;
+   
+}
+
+.opcoes:hover {
+    color: black;
+    transition-duration: 1s ;
+}
+
+header {
+    background: linear-gradient(to bottom, #FF8E24, #E89B20, #FFC530 50%);
+    position: relative;
+    
+}
+
+#sla {
+    height: 150px;
+    margin-left: 40px;
+    padding-top: 4px;
+    display: inline-block;
+    
+}
+
+.opcoes {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 50px;
+    letter-spacing: 1px;
+}
+
+#titulo {
+    font-family: 'Rock Salt', cursive;
+    font-size: 36px;
+    color: white;
+    
+}
+
+#subtitulo {
+    
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Rock Salt', cursive;
+}
+
+#primeira-parte {
+    height: 580px;
+    background-image: url(banner.png);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -46px;
+    margin-bottom: 40px;
+}
+
+#textos-1 {
+    margin-left: 40px;
+    padding-top: 85px;
+    
+}
+
+.texto-direto {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+}
+
+#botao-texto {
+    margin-top: 40px;
+    width: 250px;
+    height: 40px;
+    border: 3px solid #E89B20;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #FFC530, #E8C420);
+    color: white;
+    border: none;
+    font-family: 'Rock Salt', cursive;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#segunda-parte {
+    
+    margin: 0px 40px;
+   position: relative;
+   background-color: rgba(128, 128, 128, 0.288);
+   height: 620px;
+   margin-bottom: 20px;
+}
+
+#imagem-2 {
+    height: 620px;
+    background-repeat: no-repeat;
+    background-image: url(Capturar.PNG);
+}
+
+#texto1 {
+    display: inline-block;
+    margin-left: 150px;
+    position: absolute;
+    max-width: 350px;
+    left: 580px;
+    top: 100px;
+    
+}
+
+#titulo-dois {
+    font-family: 'Rock Salt', cursive;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#texto-dois {
+    font-family: 'Rock Salt', cursive;;
+    font-size: 21px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.041);
+    height: 15px;
+    text-align: center;
+}
+
+footer > p {
+    font-size: 10px;
+    padding: 2px;
+}
+
+.galeria {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+    
+}
+
+#galeria-agrupar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+    height: 10px;
+}
+
+.galeria::-webkit-scrollbar {
+    display: none;
+}
+
+.galeria > div {
+    margin-top: 150px;
+    margin-right: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 70px;
+    padding: 10px;
+    flex: none;
+}
+
+.fotos {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.fotos:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#botao-voltar, #botao-frente {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+    margin-top: 100px;
+    
+}
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section id="sla">
+            <div id="titulogeral">
+                <h1 id="titulo">SCORPION</h1>
+                <h2 id="subtitulo">ACADEMIA</h2>
+            </div>
+            <nav id="navegacao">
+               <a href="" class="opcoes">Unidades</a>
+               <a href="" class="opcoes">Sobre</a>
+               <a href="" class="opcoes">Horarios</a>
+               <a href="" class="opcoes">Contato</a>
+            </nav>
+            <div id="scorpion"></div>
+        </section>
+    </header>
+    <main>
+        <section id="primeira-parte">
+            <div id="textos-1">
+                <h1 class="texto-direto">VOCÊ SEMPRE EM DIA</h1>
+                <h1 class="texto-direto">COM A SAÚDE!</h1> 
+                <input type="button" id="botao-texto" value="SAIBA MAIS!">
+            </div>
+        </section>
+        <div id="segunda-parte">
+            <div id="imagem-2"></div>
+            <div id="texto1">
+                <p id="titulo-dois">EQUIPAMENTOS DE ULTIMA GERAÇÃO</p>
+                <p id="texto-dois">As áreas de musculação e atividades extras são equipadas com o que há de mais morderno no mercado fitness. Venha conferir!</p>
+            </div>
+        </div>
+        <div id="galeria-agrupar">
+            <img src="back.png" id="botao-voltar">
+            <div class="galeria">
+                <div>
+                    <span><img src="foto1.PNG" class="fotos"></span>
+                    <span><img src="foto3.PNG" class="fotos"></span>
+                    <span><img src="foto2.PNG" class="fotos"></span>
+                </div>
+                <div>
+                    <span><img src="foto4.PNG" class="fotos"></span>
+                    <span><img src="foto5.PNG" class="fotos"></span>
+                    <span><img src="foto6.PNG" class="fotos"></span>
+                </div>
+            </div>
+            <img src="next.png" id="botao-frente">
+        </div>
+        
+        
+    </main>
+    
+    <script>
+        
+
+        let scrollContainer = document.querySelector(".galeria")
+        let botaoAtras = document.getElementById("botao-voltar")
+        let botaoFrente = document.getElementById("botao-frente")
+
+        botaoFrente.addEventListener("click", ()=>{
+            scrollContainer.scrollLeft += 900
+        })
+
+        botaoAtras.addEventListener("click", ()=>{
+            scrollContainer.scrollLeft += -900
+        })
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        })
+
+        if (window.matchMedia("(min-width: 1000px)").matches) {
+            console.log("Screen width is at least 500px")
+        } else {
+            document.getElementById('imagem-2').style.marginLeft = 'none'
+            document.getElementById('scorpion').style.display = 'none'
+        }
+
+        if (window.matchMedia("(min-width: 1100px)").matches) {
+            console.log("Screen width is at least 500px")
+        } else {
+            document.getElementById('imagem-2').style.marginLeft = '175px'
+            document.getElementById('texto1').style.display = "none"
+         
+            document.getElementById('segunda-parte').style.backgroundColor = 'white'
+            
+        }
+
+
+        if (window.matchMedia("(min-width: 1200px)").matches) {
+            console.log("Screen width is at least 500px")
+        } else {
+            var els = document.getElementsByClassName('texto-direto')
+            for (var i = 0; i < els.length; i++) {
+            els[i].style.fontSize = '25px';
+            document.getElementById('textos-1').style.paddingTop = '35px'
+            document.getElementById('texto1').style.left = "520px"
+            document.getElementById('texto1').style.top = "80px"
+            }          
+        }
+    </script>
+</body>
+</html>
