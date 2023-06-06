@@ -30,19 +30,26 @@
    max-width: 690px;
    padding-left: 5em;
    position: absolute;
-   top: 50%;
+   top: 41%;
    
 }
 
 .opcoes:hover {
     color: black;
-    transition-duration: 1s ;
+    transition-duration: 1s;
+    font-size: 24px;
+    text-decoration-thickness: 5px;
 }
 
 header {
     background: linear-gradient(to bottom, #FF8E24, #E89B20, #FFC530 50%);
     position: relative;
     
+}
+
+.link {
+    text-decoration: none;
+    color: white;
 }
 
 #sla {
@@ -88,7 +95,7 @@ header {
 
 #textos-1 {
     margin-left: 40px;
-    padding-top: 85px;
+    padding-top: 55px;
     
 }
 
@@ -99,18 +106,24 @@ header {
 }
 
 #botao-texto {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 250px;
     height: 40px;
-    border: 3px solid #E89B20;
+    border: 0px solid #E89B20;
     border-radius: 5px;
     background: linear-gradient(to bottom, #FFC530, #E8C420);
     color: white;
-    border: none;
+    transition: .5s;
     font-family: 'Rock Salt', cursive;
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 1px;
+}
+
+#botao-texto:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    border: 2px solid white
 }
 
 #segunda-parte {

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: linear-gradient(to bottom, #FF8E24, #E89B20, #FFC530 50%);
+    position: relative;
+    
+}
+
+.opcoes:hover {
+    color: black;
+    transition-duration: 1s;
+    font-size: 24px;
+    text-decoration-thickness: 5px;
+}
+
+#sla {
+    height: 150px;
+    margin-left: 40px;
+    padding-top: 4px;
+    display: inline-block;
+    
+}
+
+#navegacao {
+    display: inline-block;
+   align-items: center;
+   max-width: 690px;
+   padding-left: 5em;
+   position: absolute;
+   top: 41%;
+   
+}
+
+.opcoes {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 50px;
+    letter-spacing: 1px;
+}
+
+#titulo {
+    font-family: 'Rock Salt', cursive;
+    font-size: 36px;
+    color: white;
+    
+}
+
+#subtitulo {
+    
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Rock Salt', cursive;
+}
+
+#scorpion {
+    width: 170px;
+    height: 17vh;
+    display: inline-block;
+    position: absolute;
+    left: 80vw;
+    top: 2vh;
+    background-image: url("../esse\ esc.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#titulogeral {
+    display: inline-block;
+    
+   
+}
+
+body {
+    background: linear-gradient(to right, #FF8E24, #E89B20, #FFC530 55%);
+}
+
+#fundo-horario {
+    background-color: rgba(128, 128, 128, 0.486);
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+    top: 215px;
+}
+
+#titulo-horario {
+    color: white;
+    font-family: 'Rock Salt', cursive;
+}
+
+.dias {
+    color: white;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 14px;
+}
+
+#texto-horario {
+    margin-top: 120px;
+    color: black;
+    font-size: 12px;
+}
+
+#horario-imagem {
+    display: inline-block; 
+    margin-left: 150px;
+    
+} 
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+#imagem {
+    background-image: url(../teste2.png);
+    height: 420px;
+    width: 650px;
+    margin-top: 60px;
+    margin-left: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+}
