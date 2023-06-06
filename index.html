@@ -15,7 +15,6 @@
                 <h2 id="subtitulo"><a href="" class="link">ACADEMIA</a></h2>
             </div>
             <nav id="navegacao">
-               <a href="" class="opcoes">Unidades</a>
                <a href="" class="opcoes">Sobre</a>
                <a href="unidades/index.html" class="opcoes">Horarios</a>
                <a href="contato/index.html" class="opcoes">Contato</a>
@@ -28,7 +27,7 @@
             <div id="textos-1">
                 <h1 class="texto-direto">VOCÊ SEMPRE EM DIA</h1>
                 <h1 class="texto-direto">COM A SAÚDE!</h1> 
-                <input type="button" id="botao-texto" value="SAIBA MAIS!">
+                <input type="button" id="botao-texto" value="SAIBA MAIS!" onclick="clicou()">
             </div>
         </section>
         <div id="segunda-parte">
@@ -48,11 +47,11 @@
                 </div>
                 <div>
                     <span><img src="foto4.PNG" class="fotos"></span>
-                    <span><img src="foto5.PNG" class="fotos"></span>
+                    <span><img src="foto7.PNG" class="fotos"></span>
                     <span><img src="foto6.PNG" class="fotos"></span>
                 </div>
                 <div>
-                    <span><img src="foto7.PNG" class="fotos"></span>
+                    <span><img src="foto4.PNG" class="fotos"></span>
                     <span><img src="foto8.PNG" class="fotos"></span>
                     <span><img src="foto9.PNG" class="fotos"></span>
                 </div>
@@ -64,7 +63,9 @@
     </main>
     
     <script>
-        
+        function clicou(){
+            window.location.replace("saiba-mais/index.html");
+        }
 
         let scrollContainer = document.querySelector(".galeria")
         let botaoAtras = document.getElementById("botao-voltar")
