@@ -121,18 +121,63 @@ body {
 #relativo {
     position: absolute;
     display: inline-block;
-    width: 430px;
+    width: 480px;
     left: 78px;
-    top: 40px;
+    top: 30px;
 }
 
 .msg-contato {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #titulo-contato {
     font-family: 'Rock Salt', cursive;
     margin-bottom: 30px;
+}
+
+.nome-email {
+    height: 25px;
+    width: 200px;
+    padding: 3px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.telefone-assunto {
+    height: 25px;
+    width: 416px;
+    padding: 3px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mensagem {
+    text-align: start;
+    height: 55px;
+    width: 418px;
+    padding: 3px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao-contato {
+    height: 40px;
+    width: 429px;
+    background: linear-gradient(to right, #FF8E24, #E89B20, #FFC530 55%);   
+    border-color: #E89B20; 
+    cursor: pointer;
+}
+
+.contato-itens {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
 }
