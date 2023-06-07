@@ -41,5 +41,16 @@
             </div>
         </section>
     </main>
+    <script>
+        if (window.matchMedia("(min-width: 1200px)").matches) {
+            console.log("Screen width is at least 500px")
+        } else {
+            document.getElementById('fundo-horario').style.left = '40px'
+            document.getElementById('fundo-horario').style.top = '180px'
+            document.getElementById('horario-imagem').style.marginLeft = '0px'
+            document.getElementById('imagem').style.marginTop = '25px'
+            document.getElementById('imagem').style.width = '500px'
+        }
+    </script>
 </body>
 </html>

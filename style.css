@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap');
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
 
 * {
     padding: 0px;
     margin: 0px;
+}
+
+body {
+    animation: transitionIn 1s;
 }
 
 #titulogeral {
@@ -101,7 +117,7 @@ header {
 
 .texto-direto {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 42px;
 }
 

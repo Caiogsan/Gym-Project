@@ -16,11 +16,43 @@
             </div>
             <nav id="navegacao">
                <a href="" class="opcoes">Sobre</a>
-               <a href="" class="opcoes">Horarios</a>
+               <a href="../unidades/index.html" class="opcoes">Horarios</a>
                <a href="../contato/index.html" class="opcoes">Contato</a>
             </nav>
             <div id="scorpion"></div>
         </section>
     </header>
+    <main>
+        <section id="foto"></section>
+        <h1 id="titulo-saibamais">A MELHOR DE ITAJUBA / MG</h1>
+        <section id="principal-saibamais">
+            <div id="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29504.680476732705!2d-45.48673448916013!3d-22.425824100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb7cad272ac347%3A0x585554a58b724607!2sSCORPION%20ACADEMI!5e0!3m2!1sen!2sbr!4v1686154694795!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="texto-saibamais">
+                    <p id="subtitulo-saibamais">VENHA CONHECER O NOSSO NOVO CENTRO DE TREINAMENTO!</p>
+                    <p class="paragrafo-saibamais">Localizado em:</p>
+                    <p class="paragrafo-saibamais">Av. João Antônio Pereira, 118 - Varginha, Itajubá - MG, 37501-060</p>
+                </div>
+                <p id="fazer-parte">GARANTIMOS EQUIPAMENTOS DE ALTA QUALIDADE E UM ÓTIMO ATENDIMENTO AO CLIENTE! VENHA FAZER PARTE VOCÊ TAMBEM ! !</p>
+            </div>
+            
+        </section>
+
+    </main>
+    <script>
+        if (window.matchMedia("(min-width: 1260px)").matches) {
+            console.log("Screen width is at least 500px")
+        } else {
+            document.getElementById('texto-saibamais').style.left = '500px'
+            document.getElementById('fazer-parte').style.fontSize = '14px'
+            document.getElementById('fazer-parte').style.width = '720px'
+        }
+        if (window.matchMedia("(min-width: 1150px)").matches) {
+            console.log("Screen width is at least 500px")
+        } else {
+            document.getElementById('texto-saibamais').style.left = '460px'
+            
+        }
+    </script>
 </body>
 </html>
